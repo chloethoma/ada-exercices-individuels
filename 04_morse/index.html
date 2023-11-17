@@ -8,7 +8,27 @@
     </head>
     <body>
 
-        <h1>Ada Tech School</h1>
+        <h1>Outil de traduction Français/Morse</h1>
+
+        <section class="frenchText">
+            <p>Entrez le texte en français à traduire : </p>
+            <input type="text" id="frenchTextInput" placeholder="Entrez le texte en français ici">
+            <button type="button" onclick="MorseTraductionInHTML()">Traduire</button>
+        </section>
+
+        <section class="morseText">
+            <p>Entrez le texte en morse à traduire : </p>
+            <input type="text" id="moreTextInput" placeholder="Entrez le texte en morse ici">
+            <button type="button" onclick="FrenchTraductionInHTML()">Traduire</button>
+        </section>
+
+        <section id="morseTraduction">
+        </section>
+
+        <section id="frenchTraduction">
+        </section>
+
+
 
         <script src="script.js"></script>
     </body>
