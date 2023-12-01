@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <title>Le jeu des allumettes</title>
+</head>
+<body>
+
+    <h1>Le jeu des allumettes</h1>
+
+    <p id = "consignes">
+        Vous avez 50 allumettes. Chaque joueur enlève tour à tour entre 1 et 6 allumettes.
+        <br>Le joueur qui enlève la dernière allumette a gagné !
+    </p>
+
+    <div id="player1">
+        <label for="numberMatchOne">Joueur 1 :</label>
+        <input type="number" id="numberMatch1" name="numberMatch1" placeholder="Enlevez 1 à 6 allumettes"/>
+        <button type="button" onclick="removeMatch(1)">OK !</button> 
+    </div>
+
+    <div id="player2">
+        <label for="numberMatchTwo">Joueur 2 : </label>
+        <input type="number" id="numberMatch2" name="numberMatch2" placeholder="Enlevez 1 à 6 allumettes"/>
+        <button type="button" onclick="removeMatch(2)">OK !</button> 
+    </div>
+
+    <div id="gamePlay">
+        <p>Allumettes restantes :</p>
+        <div id="matchRest"></div>
+    </div>
+
+
+    
+    <script src="script_two_player.js"></script>
+</body>
+</html>
